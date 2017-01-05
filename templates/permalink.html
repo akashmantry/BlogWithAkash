@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {{post.render_permalink() | safe}}
+    <div class = "age">
+  		{{age}}
+ 	</div>
+{% endblock %}
+
+

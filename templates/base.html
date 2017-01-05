@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"/>
+  <title>BlogWithAkash</title>
+</head>
+
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+  <header>
+    <div class="navbar-fixed">
+      <nav class = "blue darken-2">
+        <div class="navbar-wrapper container">
+            <a href="/" class="brand-logo">
+              Blog With Akash
+            </a>
+
+            <div class="right">
+              {% if user %}
+                {{user.name}} (<a class="login-link" href="/logout">logout</a>)
+              {% else %}
+
+                <a class="login-link" href="/login">login</a>
+                |
+                <a class="login-link" href="/signup">signup</a>
+              {% endif %}
+            </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main>
+    <div id="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </main>
+
+
+
+  <footer class = "page-footer blue darken-2">
+    <div class = "container">
+      <div class="footer-copyright">
+        Copyright &copy; 2016 blogwithakash.appspot.com | All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+

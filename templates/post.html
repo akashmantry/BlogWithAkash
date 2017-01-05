@@ -1,0 +1,15 @@
+
+            <div class="card-content">
+              <blockquote>
+                <span class="card-title"><a href = {{p.link(p.key().id())}}>{{p.subject}}</a></span>
+              </blockquote> 
+              <p>{{p._render_text | safe}}</p>
+            </div>
+            <div class="card-action">
+              {{p.created.strftime("%b %d, %Y")}}
+            <div class = "right">By {{p.user}}</div>
+            </div>
+
+
+
+

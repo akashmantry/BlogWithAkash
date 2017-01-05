@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% for p in posts %}
+  	<div class = "container">
+  		<div class = "row">
+  			<div class = "card ">
+    			{{ p.render_blogfront() | safe }}
+    		</div>
+    	</div>
+    </div>
+  {% endfor %}
+
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large waves-effect waves-light red" href="/newpost"><i class="material-icons">add</i></a>
+	</div>
+
+{% endblock %}
+
+
