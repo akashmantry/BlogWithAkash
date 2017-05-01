@@ -9,5 +9,5 @@ The site is available at [BlogWithAkash](http://blogwithakash.appspot.com/)
 * A Login Page for loggin in.
 * A Blog Creation Page for creating subject and content of the blog.
 * A wiki to edit the blogs.
-* Password hashing is done employing a secret, random salt and sha256 algorithm.
+* Password hashing is done employing a random salt and sha256 algorithm.
 * Google App Engine's GQL is used to manage database.
